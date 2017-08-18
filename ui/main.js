@@ -13,8 +13,8 @@
 //    var interval = setInterval(moveRight, 100);
 //};
 
-var button = document.getElementById('counter');
-var counter = 0;
+var button = document.getElementById('submitbtn');
+//var counter = 0;
 button.onclick = function(){
     // Create a request object
     var request = new XMLHttpRequest();
@@ -42,6 +42,8 @@ button.onclick = function(){
         }
     };
     // Make the request
+    var nameinput= document.getElementById('name');
+    var name = nameinput.value;
     request.open('GET', 'http://anilnlr1983.imad.hasura-app.io/submit-name?name='+name, true);
     request.send(null)
 };
