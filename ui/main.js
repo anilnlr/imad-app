@@ -34,3 +34,9 @@ button.onclick = function(){
     request.open('GET', 'http://anilnlr1983.imad.hasura-app.io/counter', true);
     request.send(null)
 };
+
+//submit name
+var nameinput= document.getElementById('name');
+var name = nameinput.value;
+var submit = document.getElementById('name');
+var submit = 
